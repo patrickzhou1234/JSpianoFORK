@@ -20,6 +20,6 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playSound);
 
-window.onclick = function() {
+document.getElementsByClassName("instructions")[0].onclick = function() {
   document.getElementsByClassName("instructions")[0].innerHTML = "Press the keys on your keyboard to play the piano!"; 
 }
