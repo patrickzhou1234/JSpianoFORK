@@ -19,3 +19,7 @@ const keys = document.querySelectorAll('.wkey, .bkey');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playSound);
+
+window.onclick = function() {
+  document.getElementsByClassName("instructions")[0].innerHTML = "Press the keys to play the piano!"; 
+}
